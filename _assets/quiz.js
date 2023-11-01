@@ -70,7 +70,7 @@ function next () {
 
     if(i < questions.length) {
         title.innerText = questions[i].question;
-        img.innerHTML = `<img  src="./_assets/_imagens/${i}.jpg">`
+        img.innerHTML = `<img  src="./_assets/_imagens/${i}.jpg">` // FOTO DO NERO NA PRIMEIRA PERGUNTA?
         a.innerText = questions[i].options[0];
         b.innerText = questions[i].options[1];
         c.innerText = questions[i].options[2];
@@ -96,7 +96,7 @@ function checkAnswer() {
     let correctAnswer = questions[i - 1].correct;
 
     if (selectedAnswer === correctAnswer) {
-        correct++; //Está dando 11??
+        correct++; //TÁ DANDO 11
     }
 }
 
