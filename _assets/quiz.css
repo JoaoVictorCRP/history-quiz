@@ -1,0 +1,46 @@
+:root { /*   declarando Variaveis   */
+    --primary-color: #af0a0a;
+    --primary-color-darker: #690404;
+}
+
+
+body {
+    background-color: var(--primary-color);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+*{
+   box-sizing: border-box;
+   outline: 0; 
+}
+
+.menu {
+    background-color: antiquewhite;
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 20;
+    height: 20px;
+    cursor: pointer; /*Faz o mouse virar uma "mãozinha" ao dar hover*/
+    margin-bottom: 10px;
+}
+
+button:hover{
+    background: var(--primary-color-darker);
+}
+
+img{
+    border: solid 2px var(--primary-color);
+    max-width: 500px;
+    margin-bottom: 10px;
+}

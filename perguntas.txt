@@ -1,0 +1,29 @@
+1. "Quem foi o 3º Presidente do Brasil?"
+opções: "Getúlio Vargas", "Prudente de Moraes", "Juscelino Kubitschek", "Deodoro da Fonseca"
+
+2. "Qual imperador romano nomeou o próprio cavalo ao senado?"
+opções: "Júlio César", "Nero", Calígula", "Tibério"
+
+3. "Em que ano se deu a tomada de Constantinopla pelos Turcos-Otomanos?"
+opções: "1453", "1399", "1578", "1691"
+
+4. "Qual país financiou a viagem de Cristóvão Colombo a América?"
+opções: "Portugal", "França", "Espanha", "Holanda"
+
+5. "Quem era o papa quando ocorreu a reforma protestante?"
+opções: "Leão X", "Pio XII", "Urbano II", "Alexandre VI"
+
+6. "Qual foi o primeiro país europeu a ter contato com o Japão?"
+opções: "Portugal", "Espanha", "Holanda", "Rússia".
+
+7. "Após a morte de Joseph Stalin, quem assumiu o poder na URSS?"
+opções: "Mikhail Gorbachev", "Nikita Kruschev", "Vladmir Khozov", "Viatscheslav Molotov"
+
+8. "Qual império latino-americano foi arrasado por Francisco Pizarro?"
+opções: "Inca", "Tupi", "Asteca", "Lakota"
+
+9. "A mesopotâmia se desenvolveu como um império graças aos dois importantes rios que a banhavam, Quais eram estes rios?"
+opções: "Nilo & Tigre", "Senna & Eufrates", "Tâmisa & Uruk", "Tigres & Eufrates"
+
+10. "Qual explorador foi responsável pela descoberta da rota marítima que levava ás Índias?"
+opções: "Vasco da Gama", "Fernão de Magalhães", "Horatio Nelson", "Eusébio de Queirós"
