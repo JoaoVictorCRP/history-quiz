@@ -67,7 +67,7 @@ let correct = 0;
 function next () {   //Função para passar para a próxima pergunta
 
     if(i < questions.length) {
-        title.innerText = questions[i].question;
+        title.innerText = `${i+1}. ${questions[i].question}`;
         img.innerHTML = `<img  src="./_assets/_imagens/${i}.jpg">`
         a.innerText = `${questions[i].options[0]}`;
         b.innerText = `${questions[i].options[1]}`;
@@ -82,7 +82,8 @@ function next () {   //Função para passar para a próxima pergunta
         console.log(correct)
     } else {
         alert(`Você acertou um total de ${correct} Perguntas, Muito bem!`)
-        //Fim do questionário
+        
+
     }
 }
 
