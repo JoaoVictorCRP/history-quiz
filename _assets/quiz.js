@@ -60,45 +60,46 @@ let img = document.querySelector('#image');
 let i = 0;
 let correct = 0;
 
-function next () {   
 
-    //Removendo ouvintes de evento anteriores(para que não some mais corretas que o necessário)
-    for (let button in buttons) {
-        button.removeEventListener('click', checkAnswer)
-    }
-
+function next () {   //Função para passar para a próxima pergunta
 
     if(i < questions.length) {
         title.innerText = questions[i].question;
-        img.innerHTML = `<img  src="./_assets/_imagens/${i}.jpg">` // FOTO DO NERO NA PRIMEIRA PERGUNTA?
+        img.innerHTML = `<img  src="./_assets/_imagens/${i}.jpg">`
         a.innerText = questions[i].options[0];
         b.innerText = questions[i].options[1];
         c.innerText = questions[i].options[2];
         d.innerText = questions[i].options[3];
         i++;
+
+        for (let button of buttons){
+            button.removeEventListener('click', checkAnswer); //Removendo EventListeners
+        }
+
+        for (let button of buttons) {
+            button.addEventListener('click', checkAnswer); // Repondo EventListeners
+        }
     } else {
         alert(`Você acertou um total de ${correct} Perguntas, Muito bem!`)
-        //Questionário terminou kkkk
-    }
-    for (let button of buttons){
-        button.addEventListener('click', checkAnswer) 
+        //Fim do questionário
     }
 }
 
+function checkAnswer() { // checar resposta e repetir a função next
 
-for (let button of buttons){
-    button.addEventListener('click',next)
-}
-
- /// AINDA NÃO TESTEI... TÁ DANDO CERTO?
-function checkAnswer() {
-    let selectedAnswer = this.innerText //Obtendo a resposta selecionada
+    let selectedAnswer = this.innerText; // Obtém a resposta selecionada
     let correctAnswer = questions[i - 1].correct;
 
     if (selectedAnswer === correctAnswer) {
-        correct++; //TÁ DANDO 11
+        correct++;
     }
+
+    next();
 }
 
+
+for (let button of buttons) {
+    button.addEventListener('click', checkAnswer);
+}
 
 next()
