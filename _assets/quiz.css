@@ -25,14 +25,17 @@ body {
 }
 
 button {
-    border: none;
-    background: var(--primary-color);
-    color: #fff;
+
+    border: solid 2px black;
+    border-radius: 10px;
+    color: black;
     font-size: 18px;
     font-weight: 20;
-    height: 20px;
+    height: 30px;
     cursor: pointer; /*Faz o mouse virar uma "mãozinha" ao dar hover*/
     margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 button:hover{
