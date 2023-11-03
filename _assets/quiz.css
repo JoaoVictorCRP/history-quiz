@@ -44,6 +44,6 @@ button:hover{
 
 img{
     border: solid 2px var(--primary-color);
-    max-width: 500px;
+    max-width: 350px;
     margin-bottom: 10px;
 }

@@ -1,55 +1,56 @@
 const questions = [
     {
-        question: "Qual evento histórico marcou o início da Primeira Guerra Mundial?",
-        options: ["Assassinato do Arquiduque Francisco Ferdinando da Áustria","Bomba atômica em Hiroshima e Nagasaki", "Invasão Alemã na Itália", "Revolução Russa"],
-        correct: "Assassinato do Arquiduque Francisco Ferdinando da Áustria"
+        question: "What historical event marked the beginning of World War I?",
+        options: ["Assassination of Archduke Franz Ferdinand of Austria", "Atomic bomb in Hiroshima and Nagasaki", "German invasion of Italy", "Russian Revolution"],
+        correct: "Assassination of Archduke Franz Ferdinand of Austria"
     },
     {
-        question: "Qual imperador romano nomeou o próprio cavalo ao senado?",
-        options: ["Júlio César", "Nero", "Calígula", "Tibério"],
-        correct: "Calígula"
+        question: "Which Roman emperor appointed his horse as a senator?",
+        options: ["Julius Caesar", "Nero", "Caligula", "Tiberius"],
+        correct: "Caligula"
     },
     {
-        question: "Em que ano se deu a tomada de Constantinopla pelos Turcos-Otomanos?",
+        question: "In what year did the Ottoman Turks took over Constantinople?",
         options: ["1453", "1399", "1578", "1691"],
         correct: "1453"
     },
     {
-        question: "Qual país financiou a viagem de Cristóvão Colombo a América?",
-        options: ["Portugal", "França", "Espanha", "Holanda"],
-        correct: "Espanha"
+        question: "Which country financed Christopher Columbus's voyage to America?",
+        options: ["Portugal", "France", "Spain", "Netherlands"],
+        correct: "Spain"
     },
     {
-        question: "Quem era o papa quando ocorreu a reforma protestante?",
-        options: ["Leão X", "Pio XII", "Urbano II", "Alexandre VI"],
-        correct: "Leão X"
+        question: "Who was the pope when the Protestant Reformation occurred?",
+        options: ["Leo X", "Pius XII", "Urban II", "Alexander VI"],
+        correct: "Leo X"
     },
     {
-        question: "Qual foi o primeiro país europeu a ter contato com o Japão?",
-        options: ["Portugal", "Espanha", "Holanda", "Rússia"],
+        question: "Which was the first European country to have contact with Japan?",
+        options: ["Portugal", "Spain", "Netherlands", "Russia"],
         correct: "Portugal"
     },
     {
-        question: "Após a morte de Joseph Stalin, quem assumiu o poder na URSS?",
-        options: ["Mikhail Gorbachev", "Nikita Kruschev", "Vladmir Khozov", "Viatscheslav Molotov"],
+        question: "After the death of Joseph Stalin, who became the new leader of the USSR?",
+        options: ["Mikhail Gorbachev", "Nikita Khrushchev", "Leon Trotsky", "Vladimir Lenin"],
         correct: "Mikhail Gorbachev"
     },
     {
-        question: "Qual império latino-americano foi arrasado por Francisco Pizarro?",
-        options: ["Inca", "Tupi", "Asteca", "Lakota"],
+        question: "Which Latin American empire was devastated by Francisco Pizarro?",
+        options: ["Inca", "Tupi", "Aztec", "Lakota"],
         correct: "Inca"
     },
     {
-        question: "A mesopotâmia se desenvolveu graças aos importantes rios que a banhavam, Quais eram estes rios?",
-        options: ["Nilo & Tigre", "Senna & Eufrates", "Tâmisa & Uruk", "Tigres & Eufrates"],
-        correct: "Tigres & Eufrates"
+        question: "Mesopotamia became the first great civilization due to the two important rivers that flowed through it. Those rivers are:",
+        options: ["Nile & Tigris", "Seine & Euphrates", "Thames & Uruk", "Tigris & Euphrates"],
+        correct: "Tigris & Euphrates"
     },
     {
-        question: "Qual explorador foi responsável pela descoberta da rota marítima que levava ás Índias?",
-        options: ["Vasco da Gama", "Fernão de Magalhães", "Horatio Nelson", "Eusébio de Queirós"],
+        question: "Which explorer was responsible for discovering the maritime route to the Indies?",
+        options: ["Vasco da Gama", "Ferdinand Magellan", "Horatio Nelson", "Marco Polo"],
         correct: "Vasco da Gama"
-    },
+    }
 ];
+
 let a = document.querySelector('#a');
 let b = document.querySelector('#b');
 let c = document.querySelector('#c');
@@ -81,8 +82,16 @@ function next () {   //Função para passar para a próxima pergunta
         }
         console.log(correct)
     } else {
-        alert(`Você acertou um total de ${correct} Perguntas, Muito bem!`)
-        
+
+        if(correct>7){
+            msg='You rock!'
+        } else if (correct>3){
+            msg='Very good!'
+        } else {
+            msg='You can do better than this!'
+        }
+        alert(`You have answered ${correct} questions correctly, ${msg}`)
+        document.location.href = 'index.html'
 
     }
 }

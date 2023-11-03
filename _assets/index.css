@@ -37,3 +37,7 @@ button {
 button:hover{
     background: var(--primary-color-darker);
 }
+
+img{
+    max-width: 250px;
+}
